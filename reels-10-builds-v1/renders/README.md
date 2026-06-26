@@ -1,6 +1,26 @@
 # Rendered Reels
 
-Actual video files rendered from the still images in this repo.
+Actual video files — one cut from real video footage, one from the repo's stills.
+
+## jordan_reel_v1.mp4  (from real video footage)
+
+- **Spec:** 9:16 · 1080×1920 · 30 fps · ~15s · H.264 + AAC (~15 MB)
+- **Source:** the account's own Jordan clips (supplied separately, not stored in
+  this repo). Built by `scripts/build_video_reel.py`.
+- **Sequence:** Petra (the Siq) → Petra red rock → Petra → golden hour over Amman
+  → Amman sunset (CTA).
+- **Treatment:** each clip trimmed to its strongest ~3.6s, cover-cropped to 9:16,
+  one unified warm cinematic grade + vignette, 0.5s crossfades, kinetic text
+  overlays (hook / captions / CTA) rendered as PNG layers with fade-ins, soft
+  generated ambient pad.
+- **Before posting:** swap the placeholder pad for a trending/licensed in-app
+  track. To rebuild or re-cut, edit the `SEGS` list (filenames, start times,
+  durations, captions) at the top of `scripts/build_video_reel.py`. It expects
+  the raw clips under `extracted/for insta/` in the working dir.
+
+---
+
+
 
 ## jordan_in_20s_v1.mp4
 
